@@ -4,38 +4,22 @@ puzzle_game dev by ai
 
 - puzzle_cli: 命令行版本
 - puzzle_web: web版本
-- puzzle_server: 服务端
-- puzzle_db: 数据库
-- puzzle_game: 游戏逻辑
-- puzzle_utils: 工具函数
-- puzzle_web: web版本
-- puzzle_server: 服务端
+- main.py 单文件
 
-## 项目依赖
 
-- flask
-- flask-sqlalchemy
-- flask-migrate
-- flask-login
-- flask-wtf
-- flask-socketio
 
 ## 项目功能
-
+- 滑动拼图
 - 命令行版本
 - web版本
-- 服务端
-- 数据库
-- 游戏逻辑
-- 工具函数
+
 
 ## 项目运行
-
+- 安装依赖
+``` pip install -r requirements.txt ```
 - 命令行版本
+``` python ./puzzle_cli/main_loop.py ```
 - web版本
-- 服务端
-- 数据库
-- 游戏逻辑
-- 工具函数
+``` python ./puzzle_web/main.py ```
 
 
