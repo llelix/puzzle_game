@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滑块拼图游戏</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>滑块拼图游戏</h1>
+            <div class="game-stats">
+                <div class="stat-item">步数: <span id="step-count">0</span></div>
+                <div class="stat-item">时间: <span id="time">0</span> 秒</div>
+            </div>
+        </div>
+        
+        <div class="game-area">
+            <div id="puzzle" class="puzzle-board">
+                <!-- 拼图块由 JavaScript 动态生成 -->
+            </div>
+            <div class="game-controls">
+                <button id="reset" class="btn">重新开始</button>
+                <div id="message" class="message"></div>
+            </div>
+        </div>
+
+        <!-- 保存记录表单 -->
+        <div id="save-record" class="save-record">
+            <input type="text" id="name" placeholder="请输入你的名字" class="name-input">
+            <button id="save" class="btn">保存记录</button>
+        </div>
+    </div>
+
+    <!-- 排行榜 -->
+    <div class="leaderboard-container">
+        <h2>排行榜</h2>
+        <div id="leaderboard" class="leaderboard">
+            <table>
+                <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>名字</th>
+                        <th>步数</th>
+                        <th>时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 排行榜数据由 JavaScript 动态生成 -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
