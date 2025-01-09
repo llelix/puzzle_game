@@ -23,3 +23,5 @@ puzzle_game dev by ai
 ``` python ./puzzle_web/main.py ```
 
 
+![image](./public/image.png)
+![image](./public/image2.png)
